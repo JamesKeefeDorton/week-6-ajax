@@ -2,13 +2,41 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title><!----></title>
+	<title>week-6-ajax</title>
 	<link rel="stylesheet" href="assets/css/reset.css">
 	<link rel="stylesheet" href="assets/css/bootstrap-3.3.6.min.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-	<!---->
+	<!--<script>
+		function imgClick() {
+			console.log("anything");
+			if (this.getAttribute("src") === this.getAttribute("still")) {
+
+				this.setAttribute("src", this.getAttribute("moving"));
+
+			} else {
+				this.setAttribute("src", this.getAttribute("moving"));
+			}
+		}
+	</script>-->
+
+	<div class="container">
+		<div class="row" id="buttons"></div>
+		<div class="row">
+			<div class="col-md-8" id="images"></div>
+			<div class="col-md-4" id="submit">
+				<form id="add-button">
+					<div class="form-group">
+						<label for="search-box">Add an Animal</label>
+						<input type="search" class="form-control" id="search-box">
+					</div>
+					<button class="btn btn-default" id="search-submit">Submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
 
 	<script src="assets/javascript/jquery-3.2.1.min.js"></script>
 	<script src="assets/javascript/script.js"></script>
